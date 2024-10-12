@@ -53,7 +53,10 @@
   <div id="app">加载中</div>
   <script>
     window.$docsify = {
-      loadSidebar: "./_conf/_sidebar.md",
+      loadSidebar: true,
+      alias: {
+        '/.*/_sidebar.md': '/_conf/_sidebar.md'
+      },
       subMaxLevel: 2,
       auto2top: true,
       // 封面
